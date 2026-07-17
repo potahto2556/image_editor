@@ -21,6 +21,4 @@ Install dependencies:
 pip install Pillow
 ```
 
- **Note:** The script does not create `final_img` automatically. Create it manually first, or add `os.makedirs(path_out, exist_ok=True)` to the script, otherwise it will throw a `FileNotFoundError`.
-
  All processed images will appear in `./final_img`.
