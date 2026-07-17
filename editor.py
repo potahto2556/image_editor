@@ -3,6 +3,8 @@ import os
 
 path = './img'
 path_out = '/final_img'
+# Create the output folder if it doesn't exist yet
+os.makedirs(f".{path_out}", exist_ok=True)
 
 for filename in os.listdir(path):
     img = Image.open(f"{path}/{filename}")
